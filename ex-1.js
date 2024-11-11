@@ -1,5 +1,19 @@
 function fizzBuzz(n) {
   //Start coding here
+  let result = [];
+  for (let index = 0; index < n; index++) {
+    if ((index + 1) % 3 == 0 && (index + 1) % 5 == 0)  {
+      result.push("FizzBuzz");
+    } else if ((index + 1) % 5 == 0) {
+      result.push("Buzz");
+    } else if ((index + 1) % 3 == 0 ) {
+      result.push("Fizz");
+    } else result.push(index + 1);
+
+    console.log(result);
+  }
+
+  return result;
 }
 
 let result1 = fizzBuzz(3);
